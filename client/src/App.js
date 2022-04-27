@@ -4,7 +4,7 @@ const App = () => {
   const [name, setName] = useState([])
 
   useEffect(() => {
-    fetch('https://name-generation-app-client.herokuapp.com/')
+    fetch('https://name-generation-app-backend.herokuapp.com/')
       .then((res) => res.json())
       .then((nme) => setName([nme]))
   }, [])
